@@ -8,7 +8,11 @@ The Nola API uses short-lived, OAuth 2.0 Bearer tokens for authentication. To ma
 
 ### Download the CLI
 
-TODO
+Download the latest version of the `nola` executable and put it somewhere on your `PATH`.
+
+| Windows                                                                     | Linux (amd64)                                                                       | macOS (Silicon)                                                                     |
+|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| [Download](https://github.com/nolahq/cli/releases/latest/download/nola.exe) | [Download](https://github.com/nolahq/cli/releases/latest/download/nola-linux-amd64) | [Download](https://github.com/nolahq/cli/releases/latest/download/nola-macos-arm64) |
 
 ### Login
 
