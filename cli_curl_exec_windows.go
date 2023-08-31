@@ -40,7 +40,7 @@ func executeCurl(bearerToken string, curlArgs []string) (*exec.Cmd, error) {
 		return nil, fmt.Errorf("failed to sync temp file for curl: %w", err)
 	}
 
-	cmd := exec.Command("cmd.exe", f.Name())
+	cmd := exec.Command("cmd.exe", "/C", f.Name())
 	cmd.Stdin = os.Stdin
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
