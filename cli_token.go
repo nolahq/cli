@@ -36,7 +36,7 @@ func refreshCredentialsIfNecessary(ctx *cli.Context) error {
 	}
 
 	if err := creds.Refresh(profile.Server); err != nil {
-		return fmt.Errorf("failed to refresh token: %w. try `nola login` from scratch.", err)
+		return fmt.Errorf("failed to refresh token: %w. try `nola login` from scratch", err)
 	}
 
 	profile.AccessToken = creds.AccessToken
@@ -65,7 +65,7 @@ func findProfile(ctx *cli.Context) (string, *config.Profile, error) {
 
 	profile := conf.GetProfile(profileName)
 	if profile == nil {
-		return "", nil, fmt.Errorf("profile `%s` not found. Try `nola login --help`.", profileName)
+		return "", nil, fmt.Errorf("profile `%s` not found. Try `nola login --help`", profileName)
 	}
 
 	return profileName, profile, nil
